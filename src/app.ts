@@ -19,5 +19,13 @@ export function buildApp(options: FastifyServerOptions = {}) {
     };
   });
 
+  let i = 1;
+
+  if (app.version == "123") {
+    i = "ok";
+  }
+
+  console.log(i);
+
   return app;
 }
